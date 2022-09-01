@@ -30,6 +30,10 @@ li{
 header{
   background-color: black;
   padding: 2%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 .container-header{
   max-width: 1101px;
