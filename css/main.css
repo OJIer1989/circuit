@@ -35,13 +35,16 @@ header{
   left: 0;
   z-index: 10;
 }
-.container-header{
+header>.container {
+  padding: 0 2%;
+}
+.container{
   max-width: 1101px;
   width: 100%;
   padding: 0 10px;
   margin: 0 auto;
 }
-.container{
+.container-section{
   max-width: 892px;
   margin: 0 auto;
   padding: 0 10px;
@@ -177,7 +180,8 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.7435
   margin-top: 16px;
   color: #F8C822;
   text-transform: uppercase;
-  padding:  15px 36px;
+  min-width: 160px;
+  height: 48px;
   border: none;
   font-size: 18px;
   line-height: 23px;
@@ -195,14 +199,17 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.7435
   right: 33%;
  
 }
+.contact-body{
+  padding: 0 89px;
+}
 .contact-section{
   width: 48%;
   height: 498px;
-  
 }
 .contact-section:first-child{
   margin-right: 3%;
 }
+
 .post,
 .send{
   background-repeat: no-repeat;
@@ -214,13 +221,80 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.7435
 .post{
 background-image: url(../images/post.png);
 }
-.post::before{
+.post::before {
+  content: "Send me a letter.";
+  position: absolute;
+  width: 216px;
+  color: #fff;
+  bottom: 86px;
+  left: 57px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+.post::after{
   content: "";
- 
-
-
+  position: absolute;
+  background-image: url(../images/home.svg);
+  width: 32px;
+  height: 32px;
+  left: 144px;
+  bottom: 44px;
 }
 .send{
   background-image: url(../images/send.png);
 }
-
+.send::before{
+  content: "Connect to me online.";
+    position: absolute;
+    width: 216px;
+    color: #fff;
+    bottom: 91px;
+    left: 60px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.send::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/mail.svg);
+  width: 40px;
+  height: 40px;
+  left: 148px;
+  bottom: 45px;
+}
+footer{
+  padding: 25px 36px;
+}
+footer>.container{
+  padding: 20px 3%;
+}
+.footer-logo>.logo{
+  color: black;
+  min-width: 140px;
+}
+.footer-nav{
+  min-width: 82px;
+}
+.footer-nav:first-child{
+  text-align: center;
+  min-width: 72px;
+}
+ .footer-link{
+  color: black;
+  min-width: 72px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+ }
+ .footer-text{
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+ }
+ .footer-text>span{
+  color: #FC4850;
+ }
